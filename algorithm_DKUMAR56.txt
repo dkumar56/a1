@@ -1,0 +1,27 @@
+Assignement 1:
+The purpose of this assignement is to desgin a python code which will take differnet types of date inpute and will change it to standard form such as date inputs will be "YYYYMMDD", "YYYY/MM/DD", "YYYY-MM-DD", "YYYY.MM.DD"
+and output will be this in this form "mmm d, yyyy", however, this code will also have functions those will check for leap years as well as check for the wrong inputs and will tell the user about correct way to input.
+The main program will be named a1_dkumar56.py
+1.The leap_year() function will take a year in "YYYY" format, and return True if the given year is a leap year, otherwise return False.
+2. The range_check() function will take an integer object and a tuple with two integer values, the first value indicates the lowest and the second one indicates the highest of a integer range. If the integer object falls in between the range given in the tuple, return 'True', otherwise return 'False'
+3. The sanitize() function will take two string objects, the first string object is the object to be sanitized, and the 2nd string object contains letters that are allowed. This function will return the first object with letters not in the 2nd string object removed.
+4. The size_check() function will take an collection data type object and expected number of items as an integer and will return either 'True' or 'False'. If the number of items in the data object match the integer value given, return 'True', otherwise return 'False’.
+5. The usage() function will take no argument and return a string describing the usage of the script.
+ if __name__ == "__main__": this line will let other users to use this code again by importing it.
+Step1;
+the line with if statement is checking the value of argumrnt whether it is equal to 2 or not if no then it will print that how to use the code and then exit sample run; a1_dkumar56.py YYYYMMDD,YYYY/MM/DD,YYYY-MM-DD,YYYY.MM.DD and exit.
+Step 2;
+if the script have two arguments then it will continue working the array month_name have all the names of the months and the day_in_month array have all the days in each month such as jan have {1:31} days. the user_raw_data wiil store the argument one.
+Step3;
+allow_chars is defining the numbers those are allowd to input.then, dob function have user_raw_data,allow_chars these both will run with sanitize and the last function will print the output of dob and will call it sanitized user data.
+Step4;
+in this step code will run a size check with dob,8 and if the size is not appropriate then it will print "Error 09: wrong data entered" and then second exit.
+Step5; if the size function is true then script will continue and year, month,day will be filled using dob function which was assinged before.
+Step6;
+in step 6 the code will check for range of year if year is in between the specified range then it will continue if not then it will print 
+(Error 10: year out of range, must be 1900 or later")
+next month function will check month range from 1 to 12 if false then print (Error02: wrong month entered")
+Later, we have two more range check function one is leap_year and range_check if input is wrong for leap year then it will print ("Error 03; wrong day entered") and if range check for day is false then print 9"Error03: wrong day entered" then exit
+Step7; here the standard form of date is set and changed dob to new_dob
+Step8; last function will print ('Your date of birth is;" new_dob) sample run will be "Your date of birth is JAN 1, 1985".
+ 
